@@ -18,11 +18,11 @@ If you don't want Stage to be its list headings, change the value in WekanBoard-
    - There are functions in import.php getUserToUse() and login() but they're not used anywhere. I don't even remember if they work.
 
 ## Each execution
-1. Confirm import.php's $env file is pointing to the environment you want to use.
+1. Confirm import.php's $env value is pointing to the config file you want to use.
 2. Confirm the directory you want to read from is the same one that's in your config file.
 3. You may want to change WekanBoard->defaultStageTitle. See the Background heading for details.
-4. Export a JSON file from Zenkit
-5. Change the value of ZK_JSON_DOR in your config file to the absolute path of the directory containing the JSON exports
+4. Export one or more JSON files from Zenkit and put them in a common directory
+5. Set the value of ZK_JSON_DIR in your config file to the absolute path of the directory containing the JSON exports
 6. `php import.php`
 7. Celebrate
 
@@ -39,10 +39,10 @@ If you don't want Stage to be its list headings, change the value in WekanBoard-
 - Logging would be cool.
 - I didn't test for what would happen if you have two cards with the same name in the same list. Maybe bad things. 
 - In Zenkit you can choose whether you can apply multiple tags from the same batch to a card. If there's more than one stage attached to the card, this script will alert you that it needs manual intervention. It will not save the weird data.
-- Zenkit has a bunch of properties not supported by Wekan's creation API :(
+- Zenkit has a bunch of properties not supported by Wekan's creation API.
 - Wekan's add API has a bunch of properties not in use with incoming ZK data - ignore them.
 - I didn't see a way to import tag color into Wekan.
-- There is a WekanComment class, but I don't remember ever putting it to use.
+- There is a WekanComment class, but I don't remember ever getting it working. It's entirely possible I did and forgot.
 - Wekan's checklist item creation API is incomplete, therefore this script's ability to import checklists is incomplete. I don't remember the exact problem, just that there was one. I want to say there's no way to add list items.
 
 # Legalese
