@@ -33,7 +33,7 @@ If you don't want Stage to be its list headings, change the value in WekanBoard-
 - The API call that imports tags hangs. 
 - Doesn't detect dupicate boards - if you import the same file twice, enjoy your duplicate data.
 - Wekan supports more than one swimlane, but this script does not.
-- Lists are in no particular order
+- Lists are in no particular order.
 - Get the boards from ZK directly; I think it returns the same json the manual export returns, so it should be pretty simple. However, see https://www.globalnerdy.com/2021/06/07/the-programmers-credo/
 - WekanBoard->create() hard-codes the board's body property with test data. It probably isn't to your liking.
 - Logging would be cool.
