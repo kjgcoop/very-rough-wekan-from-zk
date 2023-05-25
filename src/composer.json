@@ -1,0 +1,13 @@
+{
+    "name": "kjgcoop/wekan-from-zk",
+    "type": "library",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "KJ Coop",
+            "email": "git@kjcoop.com"
+        }
+    ],
+    "version": "1",
+    "require": {}
+}

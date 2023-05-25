@@ -1,0 +1,22 @@
+{
+    "name": "kjgcoop/wekan-from-zk",
+    "description": "Import Zenkit backups into Wekan",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "version": "dev-master",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "KJ Coop",
+            "email": "git@kjcoop.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Kjgcoop\\": "src/" }
+    }
+}

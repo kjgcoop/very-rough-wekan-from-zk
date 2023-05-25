@@ -1,0 +1,25 @@
+{
+    "name": "kjgcoop/wekan-api",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "KJ Coop",
+            "email": "git@kjcoop.com"
+        }
+    ],
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "src/"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Kjgcoop\\": "src/" }
+    },
+    "require": {
+        "kjgcoop/wekan-from-zk": "^1.0"
+    }
+}
